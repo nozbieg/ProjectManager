@@ -7,6 +7,7 @@
     <Configurations>Debug;Release;EasyTest</Configurations>
     <UserSecretsId>ad0289f2-11b5-4802-8598-74d8c0549852</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>TRACE;DEBUG</DefineConstants>
@@ -18,6 +19,8 @@
     <DefineConstants>TRACE;DEBUG;EASYTEST</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Dockerfile.original" />
+    <None Remove="Dockerfile1.original" />
     <None Remove="Model.xafml" />
   </ItemGroup>
   <ItemGroup>
@@ -40,5 +43,8 @@
     <ProjectReference Include="..\ProjectManager.Module\ProjectManager.Module.csproj">
       <Private>True</Private>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="..\.dockerignore" />
   </ItemGroup>
 </Project>

@@ -56,7 +56,7 @@ namespace ProjectManager.Blazor.Server {
             e.Handled = true;
 #else
             if(System.Diagnostics.Debugger.IsAttached) {
-                e.Updater.Update();
+                e.Updater.Update();  //jesli uruchamiana na linux docer wymagane dociągnięcie "docker pull mcr.microsoft.com/mssql/server:2019-latest"
                 e.Handled = true;
             }
             else {

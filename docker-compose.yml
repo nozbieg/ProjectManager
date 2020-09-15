@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  projectmanager.blazor.server:
+    image: ${DOCKER_REGISTRY-}projectmanagerblazorserver
+    build:
+      context: .
+      dockerfile: ProjectManager.Blazor.Server/Dockerfile
