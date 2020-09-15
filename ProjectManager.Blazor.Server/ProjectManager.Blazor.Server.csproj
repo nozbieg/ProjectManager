@@ -5,6 +5,8 @@
     <AssemblyVersion>1.0.*</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
     <Configurations>Debug;Release;EasyTest</Configurations>
+    <UserSecretsId>ad0289f2-11b5-4802-8598-74d8c0549852</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DefineConstants>TRACE;DEBUG</DefineConstants>
@@ -29,6 +31,7 @@
     <PackageReference Include="DevExpress.ExpressApp.Xpo" Version="20.1.7" />
     <PackageReference Include="DevExpress.Persistent.Base" Version="20.1.7" />
     <PackageReference Include="DevExpress.Persistent.BaseImpl" Version="20.1.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectManager.Module.Blazor\ProjectManager.Module.Blazor.csproj">
